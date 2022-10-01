@@ -69,6 +69,7 @@ function addMeal(mealData, random = false) {
   mealsEl.appendChild(meal);
 
   const heartBtn = meal.querySelector(".meal-body .fav-btn");
+
   heartBtn.addEventListener("click", function (e) {
     if (heartBtn.classList.contains("active")) {
       removeMealLS(mealData.idMeal);
